@@ -30,7 +30,7 @@ blocks:
           - checkout
           - nvm use
           - cache restore
-      jobs:
+      # jobs:
         # - name: Static test
         #   commands:
         #     - npm run lint
