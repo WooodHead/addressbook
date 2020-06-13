@@ -4,8 +4,8 @@ var db = require('./database');
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function (req, res) {
-    res.status(200).send('success')
-})
+    res.status(200).send('success');
+});
 // app.get("/person/:id", function(req, res) {
 //     db.Person.findByPk(req.params.id)
 //         .then( person => {
