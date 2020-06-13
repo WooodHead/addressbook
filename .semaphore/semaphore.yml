@@ -30,14 +30,14 @@ blocks:
           - checkout
           - nvm use
           - cache restore
-      # jobs:
-        # - name: Static test
-        #   commands:
-        #     - npm run lint
-        # - name: Unit test
-        #   commands:
-        #     - sem-service start postgres
-        #     - npm run test
+      jobs:
+        - name: Static test
+          commands:
+            - npm run lint
+        - name: Unit test
+          commands:
+            - sem-service start postgres
+            - npm run test
 promotions:
   - name: Dockerize
     pipeline_file: docker-build.yml
